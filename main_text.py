@@ -18,4 +18,6 @@ def activity(chosen_day):
     else:
         chosen_activity = random.choice(design_catagory)
     return(chosen_activity)
-print(daypicker(), activity(daypicker))
+day = daypicker()
+day_activity = activity(day)
+print(day, day_activity)
