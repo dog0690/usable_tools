@@ -1,3 +1,3 @@
-FROM python:3.9
+FROM python:alpine
 ADD main_text.py .
 CMD ["python", "./main_text.py"]
