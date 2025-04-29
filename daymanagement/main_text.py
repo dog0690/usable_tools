@@ -2,7 +2,7 @@ import random
 day_catagory = ['chill', 'coding', 'design']
 chill_catagory = ['play games','watch movie', 'go outside']
 code_catagory = ['api practice', 'fundamental practice', 'website practice']
-design_catagory = ['newsletter', 'instagram post', 'instagram reels']
+design_catagory = ['Minecraft Design', 'Canva Design', 'Figma Design']
 
 
 
