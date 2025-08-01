@@ -17,13 +17,13 @@ class food():
 #            high = (self.max_amount * random.uniform(20, 25))/100
 #            return f"{round(high, 2)}g"
     def count(self, level) -> int:
-            if level == "H":
+            if level == "h":
                 high = (self.max_amount * random.uniform(20, 25))/100
                 amount = f"{round(high, 2)}g"
-            elif level == "M":
+            elif level == "m":
                 medium = (self.max_amount * random.uniform(14, 19))/100
                 amount=  f"{round(medium, 2)}g"
-            elif level == "L":
+            elif level == "l":
                 low = (self.max_amount * random.uniform(9, 13))/100
                 amount=  f"{round(low, 2)}g"
             else:
@@ -33,7 +33,18 @@ class food():
 me = my_macro('charley',124, 250, 34 )
 cookie = food('protien', 'H', me.protien)
 def main():
-    while True:
-        print(food.count(cookie, cookie.level))
-        time.sleep(1)
+    print('Enter Your protien')
+    fodo_name =  'cookie ' #input("name of your food? : ")
+    protien = "m" #input("protien levle? : ")
+    carbs = "h" #input("carbs level? : ")
+    fats= "m" #input("fats level? : ")
+
+    for i in range(3):
+        macros =['protien', 'carbs', 'fats']
+        macros_amt = [protien, carbs, fats]
+        me_macros = [me.protien, me.carbs, me.fats]
+        food_obj = food(macros[i], macros_amt[i], me_macros[i])
+        macro_amount = food_obj.count(macros_amt[i])
+        print(f"{macros[i]:10} {macro_amount}")
+
 main()
