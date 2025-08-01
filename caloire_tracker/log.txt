@@ -1,0 +1,7 @@
+Log of things I had to do in order to complete this project
+
+Learn the OOP
+Learn classes
+Learn decorators 
+Learn sqlite
+    sqlite read and preform calcuations on data then save it to another db

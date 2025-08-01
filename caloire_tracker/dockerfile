@@ -1,0 +1,4 @@
+FROM python:alpine
+ADD /main.py .
+
+CMD ["python", "./main.py"]
